@@ -9,10 +9,6 @@
 }
 
 header{
-    width: 100vp;
-    height: 100vp;
-    display: flex;
-    flex-direction: column;
     background-color: #EAC926;
  
 }
@@ -24,13 +20,17 @@ header{
 
 .logo{
     width: 50%;
-    padding: 30px;
+    padding: 20px;
    
 }
 
 .nav__text{
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 12px;
+    display: flex;
+    padding: 10px 0;
 }
 
 
@@ -45,15 +45,24 @@ header{
 
 .nav__bar{
     font-size: 12px;
-    text-decoration: none;
-    list-style: none;
 }
 
+li a{
+    text-decoration: none;
+    color: black;
+    }
+   
+
+.search{
+    display: flex;
+    width: 100%;
+}
 
 input{
-    width: 50%;
+    width: 40%;
     border-radius: 4px;
     background-color: #ebebeb;
+    
 }
 
 ul li{
@@ -82,13 +91,15 @@ ul li{
 /* MAIN */
  main{
     width: 100%;
-    padding: 10px 0;
-    background-color:  #ebebeb;;
 }
 
-.main__container{
+.content{
     background-color:#ebebeb;
-    
+    padding: 10px 0;
+}
+
+.content__visit .content_ofert{
+    padding: 10px 0;
 }
 
 .tittle__two{
@@ -98,46 +109,66 @@ ul li{
     padding: 35px 0;
 }
 
+.cards{
+   padding: 15px; 
+}
+    
  .cards img{
     width: 100%;
-    border-top: 1px solid;
+    border-top: 1px solid #ebebeb;
     color: #ededed;
-}
+    }
+ 
   
  .price{
     font-size: 18px;
 }
 
-.top, top__name{
+.top{
+    color: #39b54a;
+    margin-left: 14px;
+   
+}
+
+.top__name{
+    padding-top: 8px;
+    
+}
+
+.for{
+    display: flex;
+    align-items: center;
+   
+}
+
+.top, .top__name{
     font-size: 16px;
 }
 
-.top{
-    color: #39b54a;
-}
-
-.to{
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-}
+.trucks{
+    display: flex;
+    width: 100%; 
+    }
 
 .fa-truck{
     color: #39b54a;
-    font-size: 16px;
+    border-radius: 50%;
+    padding: 6px;
+    border: 1px #39b54a solid;
 }
-
 
 /* FOOTER */
 .pie{
+    display: block;
+    justify-content: center;
+    text-align: center;
     color:#666;
     padding: 15px;
 }
 
 .lax{
-   
-    padding: 30px;
-}
+    padding: 30px 0;
+    }
 
 .fa-gift{
     padding: 8px;
@@ -169,11 +200,18 @@ ul li{
 
 /* MEDIA QUERIES */
 /* mobile-first */
-@media (max-width: 481px){
+@media (max-width: 769px){
     .top__name{
       display: none;
     }
+
+    .nav__bar{
+      display: none;
+    }
 }
+
+
+/* Tablet */
 
 @media (min-width: 769px){
     .cards{  
@@ -184,7 +222,12 @@ ul li{
         display: none;
     }
 
-
 }
 
+
+@media (min-width:769px) and (max-width:1023){
+    .fa-bars{
+        display: none;
+    }
+}
 
