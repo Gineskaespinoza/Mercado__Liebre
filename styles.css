@@ -10,7 +10,7 @@
 
 header{
     background-color: #EAC926;
- 
+
 }
 
 .logo__box{
@@ -20,64 +20,76 @@ header{
 }
 
 .mercado{
-    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
 }
 
 .mercado img{
     width:100%;
-    max-width: 350px;
-    padding: 10px 10px;
-    
+    padding: 10px;
+    min-width: 200px;
+
 }
 
-.search{ 
+.search{
     display: flex;
-    width: 80%;
     justify-content: flex-end;
-    margin-right: 10px;
+    width: 60vw;
+    padding: 20px;
+   
 }
   .search input{
     display: flex;
+    align-self: center;
     justify-content: flex-end;
+    width: 60%;
     background-color: white;
     border-radius: 5px;
     border: none;
     padding: 5px;
-    
-}
+    margin-left: 5px;
+} 
 
 .fa-magnifying-glass{
-    margin-left: 5px;
-    padding: 5px;
-    border-radius: 6px;
+    display: flex;
+    align-self: center;
+    margin: 0 5px;
+    padding: 6px;
+    border-radius: 3px;
     background-color:white;
     border: none;
-
-} 
+}
 
 .nav__text{
     width: 100%;
     display: flex;
     justify-content: center;
-    text-align: center;
-    font-size: 1rem;
-    display: flex;
-    padding: 10px 0;
+    
 }
 
 
+.nav__tip {
+  
+    display: flex;
+   justify-content: center;
+   font-size: 1rem;
+   
+}
+
 .nav__bar{
    display: flex;
+   padding: 0 15px;
    }
 
 ul{
     list-style: none;
-    
+
 }
 
 li{
     padding: 5px;
-} 
+}
 
 li a{
     text-decoration: none;
@@ -99,20 +111,13 @@ li a{
 }
 
 .banner__image img{
-   width: 100%; 
+   width: 100%;
 }
 
 /* MAIN */
  main{
     width: 100%;
     background-color: #ebebeb;
-}
-
-.content__visit, .content__ofert{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-width: 150px;
 }
 
 .tittle__two{
@@ -163,7 +168,7 @@ li a{
   padding-top: 10px;
   display: flex;
   flex-direction: row-reverse;
-  width: 100%; 
+  width: 100%;
 }
 
 .fa-truck{
@@ -189,7 +194,7 @@ li a{
 .fa-gift{
     padding: 8px;
     display: flex;
-    color: #1259c3; 
+    color: #1259c3;
     justify-content: center;
     text-align: center;
     font-size: 2em;
@@ -199,15 +204,15 @@ li a{
     font-size: 2em;
     padding: 8px;
     display: flex;
-    color: #1259c3; 
+    color: #1259c3;
     justify-content: center;
     text-align: center;
 }
-  
+
 .fa-user-shield{
     padding: 8px;
     display: flex;
-    color: #1259c3; 
+    color: #1259c3;
     justify-content: center;
     text-align: center;
     font-size: 2em;
@@ -217,6 +222,7 @@ li a{
 /* MEDIA QUERIES */
 /* mobile-first */
 
+
 @media (max-width: 769px){
     .top__name{
       display: none;
@@ -225,14 +231,39 @@ li a{
     .nav__bar{
       display: none;
     }
+
 }
 
 /* Tablet */
 
 @media (min-width: 769px){
 
-   
-    .cards{  
+    .sec__header{
+        display: flex;
+        width: 100%;
+    }
+
+    .logo__box{
+        width: 60vw;
+    }   
+
+    .nav__text{
+        display: flex;
+        justify-content: flex-end;
+        width: 40vw;
+        margin-right: 30px;
+    }
+
+    .nav__tip{
+        justify-content: flex-end;
+    }
+
+    /* .products{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+
+    .cards{
        box-shadow: 0px 0px 10px rgb(100, 100, 100);
        display: flex;
        flex-wrap: wrap;
@@ -244,12 +275,12 @@ li a{
         display: flex;
         justify-content: space-between;
     }
-         
+
     ul{
         display: inline-flex;
-  
+
      }
-         
+
     li{
         padding: 5px;
      }
