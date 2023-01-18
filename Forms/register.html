@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <main>
+        <form class="user__registration" action="index.html" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label>Nombre</label>
+                <input type="text" name="name" id="name" required>
+                <label>Apellido</label>
+                <input type="text" name="last-name" id="name" required>
+                <label>Nombre de usuario</label>
+                <input type="text" name="username" id="username" required>
+                <label>Fecha de nacimiento</label>
+                <input type="date" name="birth" value="Fecha de nacimiento" required>
+                <label>Domicilio</label>
+                <input type="text" name="adress" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perfil de usuario</legend>
+                <input type="radio" name="Comprar" value="Si" checked="checked" />Comprar
+                <input type="radio" name="Vender" value="Si"/>Vender
+            </fieldset>
+
+            <fieldset>
+                <legend>Intereses</legend>
+                <input type="checkbox" name="Intereses" value="Electro">
+                <input type="checkbox" name="Intereses" value="Moda">
+                <input type="checkbox" name="Intereses" value="Hogar">
+                <input type="checkbox" name="Intereses" value="Electro">
+                <input type="checkbox" name="Intereses" value="Electro">
+                <input type="checkbox" name="Intereses" value="Electro">
+
+
+               
+            </fieldset>
+
+        </form>
+
+    </main>
+</body>
+</html>
