@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e8036813bb.js" crossorigin="anonymous"></script>
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <header class="header">
+        <section class="sec__header">
+            <section class="logo__box">
+                <figure class="mercado">
+                    <img src="assets/logo-mercado-liebre.svg" alt="LOGO">
+                </figure>
+                <div class="search">
+                    <input class="input" type="search" name="search" placeholder="Buscar productos, marcas">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </section>
+            <div class="nav__text">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <p class="nav__tip">Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </section>
+        <section id="Login">
+            <nav class="nav__bar">
+                <ul class="nav__one">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="nav__second">
+                    <li><a href="#">Crea tu cuenta</a> <i class="fa-regular fa-address-card"></i></li>
+                    <li><a href="#">ingresa</a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                    <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                </ul>
+            </nav>
+            <div class="burger__menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </section>
+    </header>
+    <main class="main-forms">
+        <form class="user__registration" action="index.html" method="POST" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label>Nombre</label>
+                    <input type="text" name="name" id="name" required>
+                    <label>Apellido</label>
+                    <input type="text" name="last-name" id="name" required>
+                    <label>Nombre de usuario</label>
+                    <input type="text" name="username" id="username" required>
+                    <label>Fecha de nacimiento</label>
+                    <input type="date" name="birth" value="Fecha de nacimiento" required>
+                    <label>Domicilio</label>
+                    <input type="text" name="adress" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Perfil de usuario</legend>
+                    <input type="radio" name="Comprador" value="Si" checked="checked" />Comprar
+                    <input type="radio" name="Vendedor" value="Si"/>Vender
+                </fieldset>
+                <fieldset>
+                    <legend>Intereses</legend>
+                    <label>Electro</label>
+                    <input type="checkbox" name="Intereses" value="Electro">
+                    <label>Moda</label>
+                    <input type="checkbox" name="Intereses" value="Moda">
+                    <label>Hogar</label>
+                    <input type="checkbox" name="Intereses" value="Hogar">
+                    <label>Juguetería</label>
+                    <input type="checkbox" name="Intereses" value="Juguetería">
+                    <label>Vida sana</label>
+                    <input type="checkbox" name="Intereses" value="Vida sana">
+                </fieldset>
+                 <fieldset>
+                   <label>Foto de usuario</label>
+                   <input type="file" name="profile-img" value="sube una imagen"/>
+                </fieldset>
+                <fieldset>
+                    <label>Contraseña</label>
+                    <input type="password" name="password" value="password" size="20"/>
+                </fieldset>
+                <fieldset>
+                    <label>Confirmar contraseña</label>
+                    <input type="text" name="password"/>
+                    <input type="submit" value="password"/>
+                </fieldset>
+                <fieldset class="btn">
+                    <a href="index.html">
+                    <input class="init__cta" type="submit" value="Enviar"></a>
+                </fieldset>
+                <fieldset class="btn">
+                    <input class="reset__cta" type="reset" value="Borrar todo">
+                </fieldset>
+        </form>
+    </main>
+</body>
+</html>
